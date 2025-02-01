@@ -44,6 +44,7 @@ namespace TestTask.Controllers
 
 
         //Запрос на получение записей из бд по фамилии - /api/Contacts/surname/{Surname}
+        //P.S. почему-то swagger не выдает значения. В Postmane работает
         [HttpGet("surname/{Surname}")]
         public async Task<ActionResult<Contact>> GetSurname(string surname)
         {
